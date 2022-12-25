@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #374151;
+  font-family: "Roboto", sans-serif;
+}
+#form {
+  position: absolute;
+  top: 15%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  width: 100%;
+  background: #1f2937;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 2rem;
+  padding: 1.5rem;
+  /* border: 2px solid red; */
+  
+}
+#form h2 {
+  color: #6b7280;
+  padding: 10px 0;
+  font-size: 1.75rem;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  background: #374151;
+  border: 2px solid #374151;
+  color: #6b7280;
+  /* position: relative; */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.input::placeholder{
+    color: #6b7280;
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+    border-color: #4A8AD3;
+    color: #eee;
+}
+
+.list li {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    color: #eee;
+    background-color: #111827;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+}
+.list li:last-child{
+    margin-bottom: 0;
+}
+.list li .fa-trash{
+color: red;
+cursor: pointer;
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+}
+/* i{
+    margin-left: 40px;
+} */
+.list li .fa-square-check{
+color: green;
+cursor: pointer;
+position: absolute;
+right: 40px;
+top: 50%;
+transform: translateY(-50%);
+
+}
+ .list li.checked{
+    color: #6b7280;
+    text-decoration: line-through;
+ }
+ .list li.checked .fa-square-check{
+    color: #6b7280;
+}
+
+footer{
+    position: absolute;
+    top: 4%;
+    color: #eee23a;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
